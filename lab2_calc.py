@@ -16,33 +16,19 @@ quad = ('The solutions are {0} and {1}'.format(x1,x2))
 
 
 
-class simple_calc:
-    def __init__(self, name: str):
-        self._name = name
 
-    def get_name(self):
 # addition
-        def add_fn(a1_arg, a2_arg):
-            return a1_arg+a2_arg
-        return self._name
-
-    def set_name(self, new_name: str):
-        self._name = new_name
-
-
-
-
-
-
+def add_fn(a1_arg, a2_arg):
+    return a1_arg+a2_arg
 
 # subtraction
-        def sub_fn(s1_arg, s2_arg):
-            return s1_arg-s2_arg
+def sub_fn(s1_arg, s2_arg):
+    return s1_arg-s2_arg
 
 # multiplication
-        def mult_fn(m1_arg, m2_arg):
-            return m1_arg*m2_arg
+def mult_fn(m1_arg, m2_arg):
+    return m1_arg*m2_arg
 
 # division
-        def div_fn(d1_arg, d2_arg):
-            return d1_arg/d2_arg
+def div_fn(d1_arg, d2_arg):
+    return d1_arg/d2_arg

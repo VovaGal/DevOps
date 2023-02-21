@@ -1,5 +1,5 @@
 # import calculated values
-from lab2_calc import quad, simple_calc
+from lab2_calc import quad, add_fn
 
 
 # import the main event loop
@@ -22,8 +22,9 @@ class QuadHandler(tornado.web.RequestHandler):
 
 class AddHandler(tornado.web.RequestHandler):
     def get(self):
-        value = int(self.get_argument(simple_calc.get_name()))
-        output = simple_calc.get_name()
+        value1 = int(self.get_argument("a1_arg","a2_arg", assert add_fn()))
+        #value2 = int(self.get_argument("a2_arg"))
+        output = add_fn()
         self.render("add.html", output = output)
 
 

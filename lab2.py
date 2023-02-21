@@ -18,9 +18,9 @@ class HomeHandler(tornado.web.RequestHandler):
 
 class QuadHandler(tornado.web.RequestHandler):
     def get(self):
-        quada = self.get_argument()
-        quadb
-        quadc
+        #quada = self.get_argument()
+        #quadb
+        #quadc
         self.write("<h1>"+quad+ "</h1>")
 
 class AddHandler(tornado.web.RequestHandler):

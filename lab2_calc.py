@@ -2,6 +2,7 @@
 import cmath
 
 # quadratic
+def quad
 a = 1
 b = 2
 c = 1
